@@ -4,7 +4,7 @@ option go_package = "genprotos/";
 
 package protos;
 
-service ElectionService {
+service UserService {
     rpc CreateUser(User) returns (Void) {}
     rpc DeleteUser(ById) returns (Void) {}
     rpc UpdateUser(User) returns(Void){}
