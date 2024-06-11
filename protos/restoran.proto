@@ -18,13 +18,13 @@ message ById{
     string Id = 1;
 }
 message Restoran {
-    string id = 1;
-    string name =2;
-    string address =3;
+    string id           = 1;
+    string name         = 2;
+    string address      = 3;
     string phone_number = 4;
-    string description = 5; 
+    string description  = 5; 
 }
 
 message GetAllRestorans {
-    repeated Restoran restorans =1;
+    repeated Restoran restorans = 1;
 }
