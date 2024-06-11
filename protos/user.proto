@@ -19,12 +19,12 @@ message ById{
     string Id = 1;
 }
 message User {
-    string id        = 1;
-    string user_name = 2;
-    string password  = 3;
-    string email     = 4;
+    string id = 1;
+    string user_name =2;
+    string password =3;
+    string email = 4;
 }
 
 message GetAllUsers {
-    repeated User users = 1;
+    repeated User users =1;
 }
