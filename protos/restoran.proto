@@ -4,7 +4,7 @@ option go_package = "genprotos/";
 
 package protos;
 import "user.proto";
-service Restoranrvice {
+service RestoranService {
     rpc CreateRestoran(Restoran) returns (Void) {}
     rpc DeleteRestoran(ById) returns (Void) {}
     rpc UpdateRestoran(Restoran) returns(Void){}
