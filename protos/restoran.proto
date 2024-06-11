@@ -3,7 +3,7 @@ syntax = "proto3";
 option go_package = "genprotos/";
 
 package protos;
-
+import "user.proto";
 service Restoranrvice {
     rpc CreateRestoran(Restoran) returns (Void) {}
     rpc DeleteRestoran(ById) returns (Void) {}
@@ -12,11 +12,7 @@ service Restoranrvice {
     rpc GetAllRestoran(Restoran) returns (GetAllRestorans){}
 }
 
-message Void{}
-  
-message ById{
-    string Id = 1;
-}
+
 message Restoran {
     string id           = 1;
     string name         = 2;
