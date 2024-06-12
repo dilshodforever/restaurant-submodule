@@ -10,7 +10,7 @@ service ReservationService {
     rpc UpdateReservation(Reservation) returns(Void){}
     rpc GetByIdReservation(ById) returns (Reservation) {}
     rpc GetAllReservation(Reservation) returns (GetAllReservations){}
-    rpc Reservation(Reservation) returns(Void){}
+    rpc Reservations(Reservation) returns(Void){}
 }
 
 
